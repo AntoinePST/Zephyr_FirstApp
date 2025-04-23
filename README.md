@@ -152,7 +152,7 @@ cd /zephyrproject
 ```sh
 git clone https://github.com/AntoinePST/zephyr_app_base my_app
 ```
-This will create a new directory called my_app containing the template application.
+This will create a new directory called **my_app** containing the template application.
 
 ### 2.2 Write your application
 
@@ -220,9 +220,11 @@ int main(void)
 }
 ```
 
+_______________________________________________________________
+
 # 3. Build and Flash the application
 
-Once your code is written, you can build and flash the application onto your Nucleo board.
+Once your code is written, you can build and flash the application into your NUCLEO board.
 
 1. Open your terminal.
 2. Navigate to your application directory:
@@ -250,6 +252,9 @@ west flash
 
 > [!IMPORTANT]
 > If the flash command (*west flash*) doesn't work, please refer to the troubleshooting section of the lastest guide via **[this link](https://github.com/AntoinePST/Zephyr_Startup#troubleshooting)**.
+
+
+_______________________________________________________________
 
 # 4. Debuging Configuration
 
