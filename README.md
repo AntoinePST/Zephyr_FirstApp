@@ -26,7 +26,7 @@ _______________________________________________________________
 
 If you followed the previous **[Zephyr Startup Guide](https://github.com/AntoinePST/Zephyr_Startup)**, your Zephyr workspace that we had called *zephyrproject* is stored in `C:/Zephyr_Repo/zephyrproject`.
 
-```{: .no-copy}
+```{: .css .no-copy}
 zephyrproject/                       // WORKSPACE
    ├─── .venv/                       // Python virtual environments configuration
    ├─── .west/                       // West configuration and manifest repository
@@ -48,7 +48,7 @@ In our case, we want to use Zephyr as a workspace. An application located within
 
 In the following example, app1, app2, and app3 are Zephyr workspace applications:
 
-```{: .no-copy}
+```{: .yalm .no-copy}
 zephyrproject/           // WORKSPACE
    ├─── .venv/                      
    ├─── .west/
