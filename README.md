@@ -26,7 +26,7 @@ _______________________________________________________________
 
 If you followed the previous **[Zephyr Startup Guide](https://github.com/AntoinePST/Zephyr_Startup)**, your Zephyr workspace that we had called *zephyrproject* is stored in `C:/Zephyr_Repo/zephyrproject`.
 
-```
+```{: .no-copy}
 zephyrproject/                       // WORKSPACE
    ├─── .venv/                       // Python virtual environments configuration
    ├─── .west/                       // West configuration and manifest repository
@@ -97,11 +97,11 @@ Here is a typical structure of a basic Zephyr application:
 
 This folder contains the files used to flash your microcontroller. Some interesting files in this directory include:
 
-`build/zephyr/zephyr.dts`: CMake uses a devicetree to tailor the build for your specific architecture/board. This is the final version of that file, where you can find all the different functionalities (GPIO, Timers, PWM, DMA, UART, SPI, I2C, DAC, USB, etc.) present on your MCU, which can then be used in your application.
+`buildephyrephyr.dts`: CMake uses a devicetree to tailor the build for your specific architecture/board. This is the final version of that file, where you can find all the different functionalities (GPIO, Timers, PWM, DMA, UART, SPI, I2C, DAC, USB, etc.) present on your MCU, which can then be used in your application.
 
-`build/zephyr/.config`: The final Kconfig used for your build. This can be useful to verify if a setting has been set correctly.
+`buildephyr/.config`: The final Kconfig used for your build. This can be useful to verify if a setting has been set correctly.
 
-`build/zephyr/zephyr.elf`: This is the final executable binary, containing the compiled code of your application and all its dependencies, used for flashing the target microcontroller or for debugging.
+`buildephyrephyr.elf`: This is the final executable binary, containing the compiled code of your application and all its dependencies, used for flashing the target microcontroller or for debugging.
 
 #### src/main.c
 This is a source code file. Applications typically contain source files written in C, C++, or assembly language. According to Zephyr conventions, these files should be placed in a subdirectory named `src` within your application directory.
@@ -142,7 +142,7 @@ The easiest way to create a Zephyr application is to start from an existing temp
 2. Navigate to your Zephyr project directory:
 
 ```sh
-cd /zephyrproject
+cd zephyrproject
 ```
 
 3. Clone the application template:
@@ -230,7 +230,7 @@ Once your code is written, you can build and flash the application into your NUC
 2. Navigate to your application directory:
 
 ```sh
-cd ../zephyrproject/my_app
+cd zephyrproject/my_app
 ```
 
 3. Build the application for the Nucleo U575ZI-Q board:
@@ -293,7 +293,7 @@ If this folder is not generated automatically, we can create it manually. Here a
 1. Navigate to your Zephyr project directory and create the .vscode folder:
 
 ```sh
-cd /zephyrproject
+cd zephyrproject
 ```
 ```sh
 mkdir .vscode
